@@ -10,9 +10,11 @@ const axios = require("axios");
 module.exports = function(api) {
   api.loadSource(async ({ addCollection }) => {
     const collection = addCollection("Post");
-    const { data } = await axios.get(
-      "https://dev.to/api/articles?username=alexmenor"
-    );
+    const { data } = await axios.get("https://dev.to/api/articles/me", {
+      headers: {
+        "api-key": process.env.DEV_TO_API_KEY,
+      },
+    });
 
     for (const item of data) {
       const {
@@ -22,6 +24,7 @@ module.exports = function(api) {
         published_timestamp: createdAt,
         cover_image: picture,
         tag_list: tags,
+        body_markdown: content,
       } = item;
       collection.addNode({
         id,
@@ -30,6 +33,7 @@ module.exports = function(api) {
         createdAt,
         picture,
         tags,
+        content,
       });
     }
   });
