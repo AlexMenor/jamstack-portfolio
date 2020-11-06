@@ -1,29 +1,38 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
+    <h1>About me</h1>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+      I'm a 21 year old Computer Engineering student from Spain.
+    </p>
+    <p>
+      After 2 years studying my degree, I found in Web and Mobile Development my
+      passion. More specifically: Server Side Programming, Cloud Computing and
+      API Design.
+    </p>
+    <p>
+      I'm right now working at Pantala while I finish my degree. I'm also the
+      lead of DSC in Granada.
     </p>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <h1>Some of the technologies I enjoy the most are:</h1>
+    <ul>
+      <li>NodeJS with NestJS as a framework</li>
+      <li>Spring Boot</li>
+      <li>PostgreSQL and MongoDB</li>
+      <li>GoLang</li>
+      <li>Vue</li>
+      <li>Flutter</li>
+    </ul>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    title: "Home",
+  },
+};
 </script>
 
 <style>
