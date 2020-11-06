@@ -25,6 +25,7 @@ module.exports = function(api) {
         cover_image: picture,
         tag_list: tags,
         body_markdown: content,
+        slug,
       } = item;
       collection.addNode({
         id,
@@ -34,6 +35,7 @@ module.exports = function(api) {
         picture,
         tags,
         content,
+        slug,
       });
     }
   });
