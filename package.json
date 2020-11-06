@@ -1,0 +1,13 @@
+{
+  "name": "jamstack-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@perlatsp/gridsome-source-devto": "0.0.1",
+    "gridsome": "^0.7.0"
+  }
+}
