@@ -8,7 +8,9 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/latest-blog-posts/"
+          >Latest blog posts</g-link
+        >
       </nav>
     </header>
     <div class="content">
@@ -57,8 +59,13 @@ body {
 .nav__link {
   margin-left: 20px;
   text-decoration: none;
-}
-.nav__link:visited {
   color: black;
+}
+
+.flex-all-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 </style>
