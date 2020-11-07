@@ -2,11 +2,15 @@
   <Layout>
     <div class="flex-all-center">
       <div>
-        <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <g-link
+          v-for="edge in $page.posts.edges"
+          :key="edge.node.id"
+          style="display: block; text-decoration: none"
+          :to="edge.node.slug"
+        >
           <h1>{{ edge.node.title }}</h1>
           <p>{{ edge.node.description }}</p>
-          <g-link :to="edge.node.slug">Link</g-link>
-        </div>
+        </g-link>
       </div>
     </div>
   </Layout>

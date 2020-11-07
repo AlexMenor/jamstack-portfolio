@@ -59,7 +59,6 @@ body {
 .nav__link {
   margin-left: 20px;
   text-decoration: none;
-  color: black;
 }
 
 .flex-all-center {
@@ -67,5 +66,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: black;
 }
 </style>
