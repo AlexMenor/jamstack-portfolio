@@ -7,4 +7,7 @@
 module.exports = {
   siteName: "Alejandro Menor",
   plugins: [],
+  templates: {
+    Post: "/:slug",
+  },
 };

@@ -5,6 +5,7 @@
         <div v-for="edge in $page.posts.edges" :key="edge.node.id">
           <h1>{{ edge.node.title }}</h1>
           <p>{{ edge.node.description }}</p>
+          <g-link :to="edge.node.slug">Link</g-link>
         </div>
       </div>
     </div>
@@ -30,6 +31,7 @@ query {
         createdAt
         picture
         tags
+        slug
       }
     }
   }
