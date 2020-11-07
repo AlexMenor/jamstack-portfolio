@@ -1,10 +1,9 @@
 <template>
   <Layout>
+    <console-hero consoleText="I like to do Backend Development" />
     <h1>About me</h1>
 
-    <p>
-      I'm a 21 year old Computer Engineering student from Spain.
-    </p>
+    <p>I'm a {{ age }} year old Computer Engineering student from Spain.</p>
     <p>
       After 2 years studying my degree, I found in Web and Mobile Development my
       passion. More specifically: Server Side Programming, Cloud Computing and
@@ -28,9 +27,20 @@
 </template>
 
 <script>
+import ConsoleHero from "~/components/ConsoleHero.vue";
 export default {
   metaInfo: {
     title: "Home",
+  },
+  components: { ConsoleHero },
+
+  computed: {
+    age() {
+      const birthday = new Date("02/10/1999");
+      const diff = Date.now() - birthday;
+      const ageDate = new Date(diff);
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    },
   },
 };
 </script>

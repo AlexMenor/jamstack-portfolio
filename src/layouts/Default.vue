@@ -7,7 +7,7 @@
           style="text-decoration:none;color:black;letter-spacing:2px;"
         >
           <span
-            style="color:white;background-color:black; padding-left:4px;padding-right:2px;margin-right:1px"
+            style="color:white;background-color:black; padding-left:4px;padding-right:2px;margin-right:2px"
             >{{ $static.metadata.siteName[0] }}</span
           >
           <span>{{ $static.metadata.siteName.slice(1) }}</span></g-link
