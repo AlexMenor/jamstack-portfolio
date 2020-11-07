@@ -2,9 +2,16 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/" style="text-decoration:none;color:black">{{
-          $static.metadata.siteName
-        }}</g-link>
+        <g-link
+          to="/"
+          style="text-decoration:none;color:black;letter-spacing:2px;"
+        >
+          <span
+            style="color:white;background-color:black; padding-left:4px;padding-right:2px;margin-right:1px"
+            >{{ $static.metadata.siteName[0] }}</span
+          >
+          <span>{{ $static.metadata.siteName.slice(1) }}</span></g-link
+        >
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
