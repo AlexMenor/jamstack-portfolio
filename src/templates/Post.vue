@@ -1,5 +1,8 @@
 <template>
-  <h1>{{ $page.post.title }}</h1>
+  <layout>
+    <h1>{{ $page.post.title }}</h1>
+    <div v-html="$page.post.content"></div>
+  </layout>
 </template>
 
 <script>

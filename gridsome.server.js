@@ -6,6 +6,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const axios = require("axios");
+const remark = require("remark");
+const html = require("remark-html");
 
 module.exports = function(api) {
   api.loadSource(async ({ addCollection }) => {
@@ -34,9 +36,20 @@ module.exports = function(api) {
         createdAt,
         picture,
         tags,
-        content,
+        content: await markdownToHtml(content),
         slug,
       });
     }
   });
 };
+
+function markdownToHtml(markdown) {
+  return new Promise((resolve, reject) => {
+    remark()
+      .use(html)
+      .process(markdown, (err, file) => {
+        if (err) reject(err);
+        resolve(String(file));
+      });
+  });
+}

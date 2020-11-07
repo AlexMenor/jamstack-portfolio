@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   }
 }
