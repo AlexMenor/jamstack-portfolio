@@ -2,22 +2,22 @@
   <Layout>
     <div class="flex-all-center">
       <div>
-        <g-link
+        <post-preview
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
-          style="display: block; text-decoration: none"
-          :to="edge.node.slug"
-        >
-          <h1>{{ edge.node.title }}</h1>
-          <p>{{ edge.node.description }}</p>
-        </g-link>
+          :post="edge.node"
+        ></post-preview>
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
+import PostPreview from "~/components/PostPreview.vue";
 export default {
+  components: {
+    PostPreview,
+  },
   metaInfo: {
     title: "My latest blog posts",
   },
