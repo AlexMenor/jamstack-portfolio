@@ -14,7 +14,6 @@
         >
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/latest-blog-posts/"
           >Latest blog posts</g-link
         >
