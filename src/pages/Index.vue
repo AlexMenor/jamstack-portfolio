@@ -84,6 +84,10 @@ export default {
 
 .project {
   padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .project > img {
@@ -104,6 +108,5 @@ export default {
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 3em;
-  margin-bottom: 0;
 }
 </style>
