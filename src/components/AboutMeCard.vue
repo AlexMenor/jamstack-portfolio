@@ -1,6 +1,6 @@
 <template>
   <div class="card" id="root">
-    <img src="/me.jpg" />
+    <div class="img" />
 
     <p>I'm a {{ age }} year old Computer Engineering student from Spain.</p>
     <p>
@@ -31,9 +31,13 @@ export default {
 <style scoped>
 #root {
   padding: 2em;
+  max-width: 400px;
 }
-img {
-  max-width: 40vw;
+.img {
+  background-image: url(../../static/me.jpg);
+  background-size: cover;
+  width: 20vh;
+  height: 20vh;
   border-radius: 100%;
 }
 </style>
