@@ -10,4 +10,5 @@ module.exports = {
   templates: {
     Post: "/:slug",
   },
+  icon: "./static/favicon.png",
 };
