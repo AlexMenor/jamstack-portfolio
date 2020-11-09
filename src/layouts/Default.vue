@@ -65,6 +65,7 @@ body {
 .nav__link {
   margin-left: 20px;
   text-decoration: none;
+  font-weight: 550;
 }
 
 .flex-all-center {
