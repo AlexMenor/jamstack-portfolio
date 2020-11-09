@@ -1,17 +1,39 @@
 <template>
   <Layout>
     <console-hero consoleText="I like to do Backend Development" />
-    <about-me-card></about-me-card>
-
-    <h1>Some of the technologies I enjoy the most are:</h1>
-    <ul>
-      <li>NodeJS with NestJS as a framework</li>
-      <li>Spring Boot</li>
-      <li>PostgreSQL and MongoDB</li>
-      <li>GoLang</li>
-      <li>Vue</li>
-      <li>Flutter</li>
-    </ul>
+    <div class="index-content">
+      <about-me-card></about-me-card>
+      <div class="projects">
+        <p class="projects-title">Projects I'm working on</p>
+        <div class="project">
+          <img
+            src="/pantala.png"
+            alt="Pantala logo"
+            style="filter: invert(1);"
+          />
+          <p>
+            An unlimited closet as a service. In a world where fast fashion is a
+            thing, we want our customers to have choice and joy for what they
+            wear while being friendly to our planet.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/kanuki.png" alt="Kanuki logo" />
+          <p>
+            <strong>Kanuki</strong>
+            is a content platform, we provide the space and tools so the
+            creators can share their talent with the world.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/dsc.png" alt="DSC logo" />
+          <p>
+            I'm also the lead of the Developer Student Club in Granada, helping
+            colleagues with new technologies and developing projects together.
+          </p>
+        </div>
+      </div>
+    </div>
   </Layout>
 </template>
 
@@ -29,5 +51,37 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+
+.index-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 1em;
+}
+
+.project > img {
+  max-width: 60%;
+  max-height: 70px;
+  object-fit: cover;
+}
+
+.projects {
+  max-width: 600px;
+  min-width: 0;
+}
+
+.index-content > * {
+  min-width: 0;
+}
+.projects-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 3em;
+  margin-bottom: 0;
 }
 </style>

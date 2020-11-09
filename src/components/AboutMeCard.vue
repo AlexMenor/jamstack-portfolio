@@ -10,8 +10,8 @@
       API Design.
     </p>
     <p>
-      I'm right now working at Pantala while I finish my degree. I'm also the
-      lead of DSC in Granada.
+      I'm currently finishing my degree while working on some projects that you
+      can read about below.
     </p>
     <p class="section-title">Technologies I enjoy the most</p>
     <div class="tech-grid">
