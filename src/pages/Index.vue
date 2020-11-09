@@ -33,6 +33,28 @@
           </p>
         </div>
       </div>
+      <div class="projects">
+        <p class="projects-title">Projects I've worked on</p>
+        <div class="project">
+          <img src="/vodafone.png" alt="Vodafone Logo" />
+          <p>
+            Our goal in
+            <strong>Vodafone Campus Lab</strong>
+            is to help palliate the loneliness of elderly persons. We combine
+            the best tools and technologies of XXI century with the willingness
+            of building a better society. Working to develop an effective
+            solution that allows us to connect again.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/routeleo.png" alt="Routeleo logo" />
+          <p>
+            In Routeleo we fulfill the dream of travellers on a budget. Discover
+            the way to get more for less and be able to get to the best places
+            in the world.
+          </p>
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
