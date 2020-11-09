@@ -2,6 +2,7 @@
   <div class="card" id="root">
     <div class="img" />
 
+    <p class="section-title">About me</p>
     <p>I'm a {{ age }} year old Computer Engineering student from Spain.</p>
     <p>
       After 2 years studying my degree, I found in Web and Mobile Development my
@@ -12,6 +13,13 @@
       I'm right now working at Pantala while I finish my degree. I'm also the
       lead of DSC in Granada.
     </p>
+    <p class="section-title">Technologies I enjoy the most</p>
+    <div class="tech-grid">
+      <img src="/nodejs.png" alt="Node logo" />
+      <img src="/vue.svg" alt="Vue logo" />
+      <img src="/flutter.png" alt="Flutter logo" />
+      <img src="/go.png" alt="Go logo" />
+    </div>
   </div>
 </template>
 
@@ -39,5 +47,25 @@ export default {
   width: 20vh;
   height: 20vh;
   border-radius: 100%;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.tech-grid > img {
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.tech-grid {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
