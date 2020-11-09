@@ -47,7 +47,7 @@
           </p>
         </div>
         <div class="project">
-          <img src="/routeleo.png" alt="Routeleo logo" />
+          <img src="/routeleo.jpg" alt="Routeleo logo" />
           <p>
             In Routeleo we fulfill the dream of travellers on a budget. Discover
             the way to get more for less and be able to get to the best places
