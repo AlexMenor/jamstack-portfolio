@@ -2,13 +2,19 @@
   <layout>
     <div id="post-root">
       <h1>{{ $page.post.title }}</h1>
+      <post-metadata
+        :createdAt="$page.post.createdAt"
+        :tags="$page.post.tags"
+      ></post-metadata>
       <div v-html="$page.post.content"></div>
     </div>
   </layout>
 </template>
 
 <script>
+import PostMetadata from "~/components/PostMetadata.vue";
 export default {
+  components: { PostMetadata },
   metaInfo() {
     return {
       title: this.$page.post.title,

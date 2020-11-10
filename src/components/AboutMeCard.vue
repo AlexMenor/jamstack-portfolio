@@ -1,5 +1,5 @@
 <template>
-  <div class="card" id="root">
+  <div class="card" id="about-me-root">
     <div class="img" />
 
     <p class="section-title">About me</p>
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-#root {
+#about-me-root {
   padding: 2em;
   max-width: 400px;
 }

@@ -2,7 +2,7 @@
   <g-link
     :to="post.slug"
     style="display: block; text-decoration: none"
-    id="root"
+    id="post-preview-root"
   >
     <div class="card post">
       <p id="title">{{ post.title }}</p>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-#root {
+#post-preview-root {
   max-width: 800px;
 }
 
