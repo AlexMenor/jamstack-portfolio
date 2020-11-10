@@ -31,7 +31,7 @@ query ($id: ID!) {
 
 <style>
 #post-root {
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
 }
 
