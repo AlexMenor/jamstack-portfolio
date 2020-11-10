@@ -1,7 +1,9 @@
 <template>
   <layout>
-    <h1>{{ $page.post.title }}</h1>
-    <div v-html="$page.post.content"></div>
+    <div id="post-root">
+      <h1>{{ $page.post.title }}</h1>
+      <div v-html="$page.post.content"></div>
+    </div>
   </layout>
 </template>
 
@@ -26,3 +28,17 @@ query ($id: ID!) {
   }
 }
 </page-query>
+
+<style>
+#post-root {
+  max-width: 600px;
+  margin: auto;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 1px solid #777777;
+  margin-left: 0;
+  padding-left: 1em;
+}
+</style>
