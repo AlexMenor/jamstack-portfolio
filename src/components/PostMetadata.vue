@@ -1,7 +1,7 @@
 <template>
   <div id="post-metadata-root">
-    <p>{{ createdAtFormatted }}</p>
     <tags :tags="tags"></tags>
+    <p class="createdAt">{{ createdAtFormatted }}</p>
   </div>
 </template>
 
@@ -27,5 +27,10 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+}
+.createdAt {
+  font-style: italic;
+  color: grey;
 }
 </style>

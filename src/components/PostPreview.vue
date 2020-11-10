@@ -8,13 +8,19 @@
       <p id="title">{{ post.title }}</p>
       <img :src="post.picture" />
       <p>{{ post.description }}</p>
+      <post-metadata
+        :createdAt="post.createdAt"
+        :tags="post.tags"
+      ></post-metadata>
     </div>
   </g-link>
 </template>
 
 <script>
+import PostMetadata from "~/components/PostMetadata.vue";
 export default {
   props: ["post"],
+  components: { PostMetadata },
 };
 </script>
 
