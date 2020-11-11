@@ -6,7 +6,7 @@
         :createdAt="$page.post.createdAt"
         :tags="$page.post.tags"
       ></post-metadata>
-      <div v-html="$page.post.content"></div>
+      <div class="post-content" v-html="$page.post.content"></div>
     </div>
   </layout>
 </template>
@@ -46,5 +46,8 @@ blockquote {
   border-left: 1px solid #777777;
   margin-left: 0;
   padding-left: 1em;
+}
+.post-content {
+  line-height: 2;
 }
 </style>
