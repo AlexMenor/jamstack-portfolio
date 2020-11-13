@@ -5,8 +5,8 @@
       <a
         href="https://github.com/AlexMenor/jamstack-portfolio"
         style="color:white"
-        >GitHub</a
-      >
+        ><img class="github-logo" src="/github.svg" alt="GH Logo"
+      /></a>
     </p>
   </div>
 </template>
@@ -25,5 +25,10 @@
 #footer-root > p {
   padding-left: 1em;
   font-size: 11px;
+}
+
+.github-logo {
+  background-color: white;
+  margin-bottom: -7px;
 }
 </style>
