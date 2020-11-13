@@ -13,7 +13,7 @@ export default {
 <style>
 #tags-root {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;

@@ -2,6 +2,7 @@
   <layout>
     <div id="post-root">
       <h1>{{ $page.post.title }}</h1>
+      <img class="post-picture" :src="$page.post.picture" alt="Post Picture" />
       <post-metadata
         :createdAt="$page.post.createdAt"
         :tags="$page.post.tags"
@@ -49,5 +50,10 @@ blockquote {
 }
 .post-content {
   line-height: 2;
+}
+.post-picture {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
 }
 </style>
