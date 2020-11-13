@@ -22,6 +22,7 @@
     <div class="content">
       <slot />
     </div>
+    <custom-footer></custom-footer>
   </div>
 </template>
 
@@ -32,6 +33,15 @@ query {
   }
 }
 </static-query>
+
+<script>
+import Footer from "~/components/Footer.vue";
+export default {
+  components: {
+    CustomFooter: Footer,
+  },
+};
+</script>
 
 <style>
 body {
