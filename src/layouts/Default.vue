@@ -1,26 +1,28 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link
-          to="/"
-          style="text-decoration:none;color:black;letter-spacing:2px;"
-        >
-          <span
-            style="color:white;background-color:black; padding-left:4px;padding-right:2px;margin-right:2px"
-            >{{ $static.metadata.siteName[0] }}</span
+  <div>
+    <div class="layout">
+      <header class="header">
+        <strong>
+          <g-link
+            to="/"
+            style="text-decoration:none;color:black;letter-spacing:2px;"
           >
-          <span>{{ $static.metadata.siteName.slice(1) }}</span></g-link
-        >
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/latest-blog-posts/"
-          >Latest blog posts</g-link
-        >
-      </nav>
-    </header>
-    <div class="content">
-      <slot />
+            <span
+              style="color:white;background-color:black; padding-left:4px;padding-right:2px;margin-right:2px"
+              >{{ $static.metadata.siteName[0] }}</span
+            >
+            <span>{{ $static.metadata.siteName.slice(1) }}</span></g-link
+          >
+        </strong>
+        <nav class="nav">
+          <g-link class="nav__link" to="/latest-blog-posts/"
+            >Latest blog posts</g-link
+          >
+        </nav>
+      </header>
+      <div class="content">
+        <slot />
+      </div>
     </div>
     <custom-footer></custom-footer>
   </div>
