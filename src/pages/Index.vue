@@ -25,13 +25,6 @@
             creators can share their talent with the world.
           </p>
         </div>
-        <div class="project">
-          <img src="/dsc.png" alt="DSC logo" />
-          <p>
-            I'm also the lead of the Developer Student Club in Granada, helping
-            colleagues with new technologies and developing projects together.
-          </p>
-        </div>
       </div>
       <div class="projects">
         <p class="projects-title">Projects I've worked on</p>
