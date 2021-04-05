@@ -6,12 +6,11 @@
     <p>I'm a {{ age }} year old Computer Engineering student from Spain.</p>
     <p>
       After 2 years studying my degree, I found in Web and Mobile Development my
-      passion. More specifically: Server Side Programming, Cloud Computing and
-      API Design.
+      passion. More specifically: <b>Full Stack Programming, Cloud Computing and
+      API Design.</b>
     </p>
     <p>
-      I'm currently finishing my degree while working on some projects that you
-      can read about below.
+      I'm also very interested in entrepreneurship. I've already worked in two startups, Pantala and Bounsel, and I've also won prizes related to it such as <a href="https://ugremprendedora.ugr.es/ets-de-ingenierias-informatica-y-de-telecomunicacion-final-del-iv-concurso-de-ideas/">"Concurso de Ideas ETSIIT" (2020)</a> and <a href="https://ugremprendedora.ugr.es/la-gran-final-del-iv-concurso-de-ideas-nos-descubre-15-grandes-proyectos-innovadores/">"Concurso de Ideas UGR" (2021). </a>
     </p>
     <p class="section-title">Technologies I enjoy the most</p>
     <div class="tech-grid">

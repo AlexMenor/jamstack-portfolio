@@ -1,10 +1,32 @@
 <template>
   <Layout>
-    <console-hero consoleText="I like to do Backend Development" />
+    <console-hero consoleText="I like to do Full Stack Development" />
     <div class="index-content">
       <about-me-card></about-me-card>
       <div class="projects">
         <p class="projects-title">Projects I'm working on</p>
+        <div class="project">
+          <img
+            src="/bounsel.png"
+            alt="Bounsel logo"
+          />
+          <p>
+            Bounsel is the all-in-one cloud solution to work with contracts – anytime, anywhere.
+            Prepare your business for a digital world.
+          </p>
+        </div>
+        <div class="project">
+          <img
+            src="/heroes.png"
+            alt="Héroes logo"
+          />
+          <p>
+            Héroes is the final project of my computer engineering degree. It tackles the problem of insecurity in the streets that specially women suffer everyday.
+          </p>
+        </div>
+      </div>
+      <div class="projects">
+        <p class="projects-title">Projects I've worked on</p>
         <div class="project">
           <img
             src="/pantala.png"
@@ -25,9 +47,6 @@
             creators can share their talent with the world.
           </p>
         </div>
-      </div>
-      <div class="projects">
-        <p class="projects-title">Projects I've worked on</p>
         <div class="project">
           <img src="/vodafone.png" alt="Vodafone Logo" />
           <p>
